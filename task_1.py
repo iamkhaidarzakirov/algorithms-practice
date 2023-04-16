@@ -94,6 +94,6 @@ if __name__ == '__main__':
     # Результаты функций отбора
     cases_diff = counter(cases_likes, cases_dislikes)
     top_cases_foo = get_best(data=cases_diff, best=5)
-    # Вывод на экран
+    # Вывод на экран / Результаты одинаковые
     print(top_cases_oop)
     print(top_cases_foo)
