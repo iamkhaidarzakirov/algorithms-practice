@@ -1,5 +1,5 @@
 """Дана строка в кодировке utf-8. Нужно найти самый часто встречающийся символ в строке и вывести сообщение
-по шаблону: Символ <символ> встречается <количество> раз """
+по шаблону: Символ <символ> встречается <количество> раз. Если символов несколько, вывести информацию о любом.  """
 
 
 class Solution:
@@ -19,6 +19,6 @@ if __name__ == '__main__':
     s = input('Введите строку для анализа: ')
     solution = Solution(string=s)
     count_dict = solution.count_chars()
-    frequent = sorted(count_dict, key=count_dict.get, reverse=True)[0]
+    frequent = sorted(count_dict, key=count_dict.get)[-1]
     print(f'Символ {frequent} встречается {count_dict[frequent]} раз(а)')
 
