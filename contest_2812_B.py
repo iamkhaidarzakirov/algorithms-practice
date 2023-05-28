@@ -101,7 +101,7 @@ if __name__ == '__main__':
         wishes = [input().split() for i in range(m)]
 
     else:  # Для тестов в среде лучше использовать чтение из файла
-        with open('data/requirements.txt', 'r', encoding='utf-8') as text:
+        with open('data/task_requirements.txt', 'r', encoding='utf-8') as text:
             requirements = text.read().split('\n')
         # Parse text
         n = int(requirements[0])
