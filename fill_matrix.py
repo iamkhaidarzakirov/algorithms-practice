@@ -59,7 +59,8 @@ def sqr_matrix_spiral(n: int) -> list[list[int]]:
 
 
 if __name__ == '__main__':
-    m = 5
+    a = 5
+    b = 5
     # print(*fill_matrix_as_snake(a, b), sep='\n')
     # print(*fill_matrix_casual(a, b), sep='\n')
-    print(*sqr_matrix_spiral(m), sep='\n')
+    print(*sqr_matrix_spiral(b), sep='\n')
